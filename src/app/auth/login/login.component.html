@@ -1,0 +1,40 @@
+<div>
+    <h3>Iniciar sesión</h3>
+
+    <form class="mt-5" autocomplete="off" >
+
+    <div class="mb-3">
+      <label for="inputUsername" class="form-label">No. de control</label>
+      <input type="text" 
+        class="form-control" 
+        placeholder="No. de control"
+        id="inputUsername"
+        formControlName="userName">
+    </div>
+
+
+    <div class="mb-3">
+        <label for="inputPassword" class="form-label">Contraseña</label>
+        <input type="password" 
+          class="form-control" 
+          id="inputPassword"
+          placeholder="Contraseña"
+          formControlName="password">
+    </div>
+
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" 
+          class="form-check-input" 
+          id="checkRemember"
+          formControlName="remember">
+      <label class="form-check-label" for="checkRemember">Recuerdame</label>
+    </div>
+
+    <div class="d-grid mt-4">
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </div>
+      
+  </form>
+
+</div>

@@ -1,0 +1,200 @@
+
+
+
+
+
+
+
+
+
+<!-- ========================
+  NAVBAR
+============================= -->
+<nav class="navbar navbar-expand navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+
+      <a class="d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+       
+
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         
+          
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/settings"><i class="fa-solid fa-gear"></i></a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img 
+                style="border-radius: 100%;"
+                width="30"
+                height="30"
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" 
+                alt="User image">
+              {{ 'Mariana Olivas' }}
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow animate__animated  animate__flipInY" aria-labelledby="navbarDropdown">
+              <li routerLinkActive="active"><a routerLink="/profile" class="dropdown-item" >Mi Perfil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li ><button  class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Cerrar sesión</button></li>
+            </ul>
+          </li>
+
+        
+        </ul>
+        
+      </div>
+
+
+
+    </div>
+  </nav>
+<!-- ========================
+  END NAVBAR
+============================= -->
+
+
+
+<!-- ========================
+  SIDEBAR
+============================= -->
+<div class="offcanvas offcanvas-start sidebarNav bg-dark text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-oscurito">
+      <img class="image-logo" [src]="'https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png'" [alt]="'Logo'">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Seguimiento de Egresados</h5>
+    </div>
+
+
+
+
+    <div class="offcanvas-body ">
+      
+      <ul class="navbar-nav sidebarList">
+
+    
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="dashboard/news">
+            <img src="https://img.icons8.com/fluency/344/news.png" alt="Logo check" height="30" >
+            <span class="ms-2">Noticias</span>
+          </a>
+        </li> 
+
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/dashboard/degree-certification">
+              <img src="https://img.icons8.com/color/344/student-male--v1.png" alt="Logo check" height="30" >
+              <span class="ms-2">Titulaciones</span>
+            </a>
+        </li>
+
+
+        <li class="mb-1">
+          <a class=" nav-link d-inline-flex align-items-center rounded border-0 collapsed" 
+              data-bs-toggle="collapse" style="cursor: pointer;"
+              data-bs-target="#account-collapse" aria-expanded="false">
+              <img src="https://img.icons8.com/external-smashingstocks-circular-smashing-stocks/344/external-notebook-education-smashingstocks-circular-smashing-stocks-2.png" alt="Logo check" height="30" >
+                <span class="ms-2">Educación continua</span>
+            </a>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li routerLinkActive="active"><a routerLink="/dashboard/courses" class="nav-link d-inline-flex text-decoration-none rounded">Cursos</a></li>
+              <li routerLinkActive="active"><a routerLink="/dashboard/workshops" class="nav-link d-inline-flex text-decoration-none rounded">Talleres</a></li>
+              <li routerLinkActive="active"><a routerLink="/dashboard/announcement" class="nav-link d-inline-flex text-decoration-none rounded">Convocatorías</a></li>
+              <li routerLinkActive="active"><a routerLink="/3" class="nav-link d-inline-flex text-decoration-none rounded">Idiomas</a></li>
+            </ul>
+          </div>
+        </li>
+
+
+        <li class="mb-1">
+            <a class=" nav-link d-inline-flex align-items-center rounded border-0 collapsed" 
+                data-bs-toggle="collapse" style="cursor: pointer;"
+                data-bs-target="#empleo-collapse" aria-expanded="false">
+                <img src="https://img.icons8.com/fluency/344/office.png" alt="Logo check" height="30" >
+                  <span class="ms-2">Empleo</span>
+              </a>
+            <div class="collapse" id="empleo-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li routerLinkActive="active"><a routerLink="/1" class="nav-link d-inline-flex text-decoration-none rounded">Tendencias Mercado Laboral</a></li>
+                <li routerLinkActive="active"><a routerLink="/2" class="nav-link d-inline-flex text-decoration-none rounded">Bolsa de trabajo</a></li>
+                <li routerLinkActive="active"><a routerLink="/3" class="nav-link d-inline-flex text-decoration-none rounded">Empleadores</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+        
+         
+        
+    
+        <!-- <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/statistics"><i class="fa-solid fa-chart-simple me-3"></i>Estadísticas</a>
+        </li> -->
+
+
+        <hr>
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/help"><i class="fa-solid fa-circle-question me-3"></i>Ayuda</a>
+        </li>
+
+        
+      </ul>
+
+      
+      
+    </div>
+
+
+
+
+      <div class="container d-flex flex-column align-items-center my-3">
+        <a class="navbar-brand" href="#">
+          <img 
+          class="cancun"
+          src="https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png" alt="" width="30" height="24">
+        </a>
+        <span class="me-2" style="font-size: .8rem;">&copy; Instituto Tecnológico de Cancún</span>
+      </div>
+
+  </div>
+
+
+  
+  
+
+
+<!-- ========================
+  END SIDEBAR
+============================= -->
+
+
+   <main class="mt-4">
+     <div class="container-fluid">
+
+
+      <router-outlet></router-outlet>
+
+
+     </div>
+   </main>
+
+
+<!-- ========================
+  END MAIN CONTENT
+============================= -->
